@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  graphqldotnetcore:
+    image: ${DOCKER_REGISTRY-}graphqldotnetcore
+    build:
+      context: .
+      dockerfile: graphQLDotNetCore/Dockerfile
